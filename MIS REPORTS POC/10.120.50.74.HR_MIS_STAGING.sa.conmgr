@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="10.120.50.74.HR_MIS_STAGING.sa"
+  DTS:DTSID="{093930D7-07C6-4101-9060-AB3774D96051}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=10.120.50.74;User ID=sa;Initial Catalog=HR_MIS_STAGING;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="m2Ye+Jfd+g=="
+        p4:IV="PSZfaIjH6L4=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">hXOUe6PT4f3HXsZmXfDsWs+H/mVrhtLVAYuX+XP7Nms4xLqB4/9KPe2364KCseAheVYYFCAruJygjvqc0gAiZyrz6Eq9saiAW3UscwTGGgzOhnfC7IeXxiXWl1insAK3dWXaMy40Dmja4OmfsvWpXwImC8jRg8zUN3ZMK5WyHG8=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

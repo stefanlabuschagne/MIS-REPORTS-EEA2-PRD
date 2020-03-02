@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/27/2016 12:03:30 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="1JGYTB2"
+  DTS:CreatorName="TREASURY\vul2214"
+  DTS:DTSID="{4535A674-A051-4DA6-98F2-FBC9F2941AC1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3006.16"
+  DTS:LocaleID="7177"
+  DTS:ObjectName="Re-Index_Source_Table"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{697AAB07-C22D-4FCA-A871-CE57BD24C2E0}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.120.50.96.HR_MIS_STAGING.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{20B01277-F5F5-473D-A861-DD16E1C6B2B8}"
+      DTS:ObjectName="10.120.50.96.HR_MIS_STAGING.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.120.50.96;User ID=sa;Initial Catalog=HR_MIS_STAGING;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="SglTkkThOQ=="
+            IV="EthoLxAJ3fI=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>EthoLxAJ3fKjY8x9HOZsrzvBSGzlvYjUIhMZ7IvxqvwXvMRYq+W0/eexnu/Ig3FBDiNIzQu2jZkpQFCg7cNaRRkiajD1e1iuGVK97bsk7SDz6wqLOnVdUCVUvk7OaKtHZA6UgUY64VfVr3mNLVlBqpX4isPlDIUXgZUEP70HMDE=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task - REINDEX THE SOURCE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{D9FF64C6-D829-42C4-BFEC-F528467F443C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task - REINDEX THE SOURCE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{20B01277-F5F5-473D-A861-DD16E1C6B2B8}"
+          SQLTask:SqlStatementSource="use [HR_MIS_STAGING];&#xA;dbcc dbreindex('[HR_MIS_STAGING].[dbo].HRO_Leave_Append_Months]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="285,42"
+          Id="Package\Execute SQL Task - REINDEX THE SOURCE"
+          TopLeft="225,246" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

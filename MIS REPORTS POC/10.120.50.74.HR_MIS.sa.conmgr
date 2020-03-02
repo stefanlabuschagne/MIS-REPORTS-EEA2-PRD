@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:DelayValidation="True"
+  DTS:ObjectName="10.120.50.74.HR_MIS.sa"
+  DTS:DTSID="{1C2ADDA1-1645-4DC6-85A9-BB5274EEFA1D}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Retain="True"
+      DTS:ConnectionString="Data Source=10.120.50.74;User ID=sa;Initial Catalog=HR_MIS;Provider=SQLNCLI11.1;Persist Security Info=True;Connect Timeout=60000;General Timeout=60000;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="fw1huPwCLg=="
+        p4:IV="VBttUa/c6cI=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">CjAr3/Pjyj7tPRPJSVYCCt8drktECZNVxJNVBkXHeSCY4l0OT0FROeXrUJastKS8J24JhlzvWwwt+1LowRHQZcmatMoSd3j3P3ewhbhf6WM3hLPwBwJRn93eSjTW9drvA3CT+dJusp5WYbMBgVJ7RLorfua0hw9fklot9QG92P4=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

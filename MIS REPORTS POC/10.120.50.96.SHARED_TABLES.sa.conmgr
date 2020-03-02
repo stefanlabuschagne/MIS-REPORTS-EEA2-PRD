@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SHARED_TABLES.sa"
+  DTS:DTSID="{5299EA83-3CA2-42A2-9715-6BD48AD74C4D}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=10.125.153.12;User ID=sa;Initial Catalog=SHARED_TABLES;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="UA/mHdUddQ=="
+        p4:IV="f+zGQhY8BDY=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">lK5AEJZ2WtyV+NY6T5y92Wg6qTcsiXVnF0R6EEdSMuhkh/Wafd/vHUzpIIhRQE3i27NC9EIUSwmTD2HYEqsTm4TEjGOnDzpB3QkNL8iqlN8t2oe82OXIemlRG90fG0oK6QjtyP5w/Gk2hkSIj2uVKBzQIZXHKlZb/8lafx7px60=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
